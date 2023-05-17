@@ -1,0 +1,7 @@
+jQuery(document).ready(function() {
+// Get the query parameter value from the current URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const s = urlParams.get('s');
+
+// Set the value of the search bar to the query parameter value
+jQuery('.jet-ajax-search__field[type="search"]').val(s);});
